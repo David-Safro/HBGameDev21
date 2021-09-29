@@ -1,21 +1,22 @@
 var game = {
   state: 0,
   paused: true,
-  spacepressed: false,
-  action: cutscenes.first(0) //this sets what happens when you hit the spacebar
+  action: function() { //this sets what happens when you hit the spacebar
+    game.state += 1;
+  },
+  refreshRate: 20
 }
-
 
 var canvas;
 var ctx;
 
 function randomColor() {
-  return "#" + Math.floor(Math.random()*16777215).toString(16)
+  return "#" + Math.floor(Math.random()*16777215).toString(16);
 }
 
+//debug options
 var recording = false;
 var record = [0, 0]
-
 
 var solids = [ //x, y, width, height
   [-25, -25, 25, 2050], //left border
@@ -43,9 +44,6 @@ var entities = [
     state: 0
   }
 ];
-
-var map = document.getElementById("testmap");
-var topmap = document.getElementById("topmap");
 
 var player = {
   x: 200,

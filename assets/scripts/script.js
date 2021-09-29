@@ -4,7 +4,7 @@ window.onload = function () {
   ctx = canvas.getContext("2d");
 
 
-  cutscenes.first()
+  cutscenes.first(0)
   //renderLoop();
 }
 
@@ -32,5 +32,5 @@ function renderLoop() {
     document.getElementById("distance").innerHTML = "(" + record[0] + ", " + record[1] + ")";
 
   }
-  window.setTimeout(renderLoop, 20)
+  window.setTimeout(renderLoop, game.refreshRate)
 }

@@ -17,7 +17,7 @@ window.addEventListener("keydown", function(event) {
     recording = [player.x, player.y];
   }
   if (key == 32) {
-    game.spacepressed = true;
+    game.action()
   }
 });
 window.addEventListener("keyup", function(event) {
@@ -37,8 +37,5 @@ window.addEventListener("keyup", function(event) {
   if (key == 82) {
     record = [player.x - recording[0], player.y - recording[1]];
     recording = false;
-  }
-  if (key == 32) {
-    game.spacepressed = false;
   }
 });
