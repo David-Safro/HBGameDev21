@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-<script src="assets/scripts/script.js"></script>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Game</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<canvas id="canvas" width="500" height="500"></canvas>
+
+  <p id="player"></p>
+  <p id="distance"></p>
+  
+	<!-- Scripts -->
+  <script src="assets/scripts/cutscenes.js"></script>
+	<script src="assets/scripts/events.js"></script>
+	<script src="assets/scripts/variables.js"></script>
+	<script src="assets/scripts/logic.js"></script>
+	<script src="assets/scripts/script.js"></script>
+	<!-- Images -->
+	<div style="display: none;">
+    <img id="intro" src="assets/sprites/intro.png"/>
+		<img id="testmap" src="assets/maps/tests/map.png"/>
+    <img id="topmap" src="assets/maps/tests/top_map.png"/>
+  </div>
   </body>
 </html>
