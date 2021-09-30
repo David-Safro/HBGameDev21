@@ -21,4 +21,11 @@ TSA Game Dev documentation
 *Tuesday, September 28, 2021*
 
   * Created Solid Objects, entities, and made it so you can go behind buildings and trees on the Test Map
+---
+*Wednesday, September 29, 2021*
 
+  * added cutscene support
+  * Connected the code to a github 
+  * enabled git commits and branches
+---
+*Thursday, September 30, 2021*
